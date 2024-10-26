@@ -1,12 +1,167 @@
+.header {
+  position: fixed;
+  top: 25px;
+  right: 0;
+  left: 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  position: relative;
+}
+
 .nav__menu {
   display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 50px 30px 30px;
+  inset: 0;
+  gap: 20px;
+  position: fixed;
+  background-color: $colorBgNav;
+  transform: translateY(-120%);
+  z-index: 5;
+
+  &.active {
+    transform: translate(0, 0);
+  }
 }
 
 .menu__item {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 26px;
+}
+
+.menu__link {
+  color: $colorTextAccentPrimary;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $colorTextAccent;
+  }
 }
 
 .open {
   display: flex;
+}
+
+.burger-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 14px 11px;
+  border-radius: 100%;
+  background-color: $colorBgNav;
+  position: relative;
+  z-index: 10;
+}
+
+.burger {
+  width: 18px;
+  height: 12.6px;
+  position: relative;
+  padding: 0;
+
+  .burger__stick {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $colorTextAccentPrimary;
+    transition: transform 0.3s ease;
+  }
+
+  &.active .burger__stick {
+    transform: scale(0);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: $colorTextAccentPrimary;
+    transition: transform 0.3s ease;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &.active::before {
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+  }
+
+  &.active::after {
+    bottom: 50%;
+    transform: rotate(-45deg) translateY(50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__menu {
+    background-color: $colorBgNav;
+    position: absolute;
+    inset: inherit;
+    top: 0;
+    right: 0;
+    width: 250px;
+    border-radius: 30px;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+    animation: hide 0.7s ease;
+
+    &.active {
+      transform: translateY(0);
+      animation: show 0.7s ease;
+    }
+  }
+
+  .menu__item {
+    font-size: 22px;
+  }
+  .menu__link {
+    color: $colorTextAccentPrimary;
+
+    &:hover {
+      color: $colorTextAccent;
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    display: none;
+    transform: translateY(-120%);
+  }
+
+  to {
+    display: flex;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide {
+  from {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  to {
+    display: none;
+    transform: translateY(-120%);
+  }
 }
