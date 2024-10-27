@@ -20,16 +20,16 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 30px 50px 30px 30px;
+  padding: 50px;
   inset: 0;
-  gap: 20px;
+  gap: 30px;
   position: fixed;
   background-color: $colorBgNav;
-  transform: translateY(-120%);
+  animation: hideMobile 0.5s ease;
   z-index: 5;
 
   &.active {
-    transform: translate(0, 0);
+    animation: showMobile 0.5s ease;
   }
 }
 
@@ -57,10 +57,22 @@
   width: 40px;
   height: 40px;
   padding: 14px 11px;
+  border: 1px solid transparent;
   border-radius: 100%;
   background-color: $colorBgNav;
   position: relative;
   z-index: 10;
+  animation: hideBorder 0.5s ease;
+
+  &.active {
+    border: 1px solid $colorTextAccentPrimary;
+    animation: showBorder 0.5s ease;
+    transition: transform 0.5s ease;
+  }
+
+  &.active:hover {
+    transform: scale(0.9) rotate(1turn);
+  }
 }
 
 .burger {
@@ -112,6 +124,16 @@
 }
 
 @media (min-width: 768px) {
+  .burger-container {
+    animation: none;
+    &.active {
+      border: inherit;
+      animation: none;
+    }
+    &.active:hover {
+      transform: none;
+    }
+  }
   .nav__menu {
     background-color: $colorBgNav;
     position: absolute;
@@ -119,14 +141,14 @@
     top: 0;
     right: 0;
     width: 250px;
+    padding: 30px 50px 30px 30px;
     border-radius: 30px;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease;
-    animation: hide 0.7s ease;
+    transform: translateY(-120%);
+    animation: hideDesctop 0.6s ease;
 
     &.active {
       transform: translateY(0);
-      animation: show 0.7s ease;
+      animation: showDesctop 0.6s ease;
     }
   }
 
@@ -142,7 +164,7 @@
   }
 }
 
-@keyframes show {
+@keyframes showDesctop {
   from {
     display: none;
     transform: translateY(-120%);
@@ -154,7 +176,7 @@
   }
 }
 
-@keyframes hide {
+@keyframes hideDesctop {
   from {
     display: flex;
     transform: translateY(0);
@@ -163,5 +185,49 @@
   to {
     display: none;
     transform: translateY(-120%);
+  }
+}
+
+@keyframes showMobile {
+  from {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    display: flex;
+    opacity: 1;
+  }
+}
+
+@keyframes hideMobile {
+  from {
+    display: flex;
+    opacity: 1;
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes showBorder {
+  from {
+    border: 1px solid transparent;
+  }
+
+  to {
+    border: 1px solid $colorTextAccentPrimary;
+  }
+}
+
+@keyframes hideBorder {
+  from {
+    border: 1px solid $colorTextAccentPrimary;
+  }
+
+  to {
+    border: 1px solid transparent;
   }
 }
