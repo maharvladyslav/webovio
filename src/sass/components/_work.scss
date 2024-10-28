@@ -1,0 +1,31 @@
+.work__title {
+  font-family: var(--font-family);
+  color: $colorTextTitle;
+  font-size: 14px;
+}
+.work__subtitle {
+  font-weight: 700;
+  font-family: var(--font-family);
+  font-size: 36px;
+  color: $colorTextTitle;
+}
+.work__text {
+  font-family: var(--font-family);
+  color: $colorTextPrimary;
+}
+.work__link {
+  color: $colorTextLink;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.quote__text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  color: $colorTextTitle;
+}
+.quote__title {
+  font-family: var(--font-family);
+  color: $colorTextRank;
+}
