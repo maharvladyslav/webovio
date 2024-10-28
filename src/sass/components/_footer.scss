@@ -1,7 +1,27 @@
 .info__titel {
   font-weight: 600;
-  font-size: 16px;
   line-height: 237%;
   text-transform: uppercase;
-  color: #fff;
+  color: $colorTextInverted;
+}
+.info__link {
+  font-weight: 400;
+  color: $colorFooterAdvertisings;
+  line-height: 250%;
+}
+.info__text {
+  font-weight: 400;
+  line-height: 162%;
+  color: $colorFooterAdvertisings;
+}
+.info__email {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 158%;
+  color: $colorTextInverted;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #5d6544;
 }
