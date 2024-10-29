@@ -1,0 +1,5 @@
+@mixin color-opacity($color, $opacity) {
+  color: rgb($color, $opacity);
+}
+//  щоб викотистати міксину пишемо
+// @include color-opacity($колір-із-зміної, $прозорість);
