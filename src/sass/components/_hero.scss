@@ -1,0 +1,31 @@
+.hero {
+  background-image: image-set(
+    url(../images/backgrounds/hero-bg.webp) type('image/webp'),
+    url(../images/backgrounds/hero-bg.jpg) type('image/jpeg')
+  );
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(
+      url(../images/backgrounds/footer-bg@2x.webp) type('image/webp'),
+      url(../images/backgrounds/hero-bg@2x.jpg) type('image/jpeg')
+    );
+  }
+  margin-bottom: 211px;
+}
+.hero__text {
+  font-size: 14px;
+  color: $colorTextInverted;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 60px;
+
+  color: $colorTextInverted;
+}
+.hero__description {
+  color: $colorTextInverted;
+}
+.hero__button {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: $colorTextAccent;
+}
