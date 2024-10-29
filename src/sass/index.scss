@@ -1,8 +1,17 @@
+@import './utils/mixins';
+@import './utils/variables';
 @import './base/common';
 @import './base/reset';
-@import './utils/variables';
 @import './base/typography';
-@import './utils/variables';
-@import './utils/mixins';
+@import './layout/grids';
 
+@import './components/header';
 @import './compotents/get-started';
+@import './components/footer';
+
+
+
+
+
+
+
