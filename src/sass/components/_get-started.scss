@@ -25,7 +25,7 @@
 }
 .form__textarea {
   font-size: 14px;
-  @include color-opacity($colorTextTitle);
+  @include color-opacity($colorTextTitle, 0.9);
 }
 .modal__submit {
   font-size: 20px;
