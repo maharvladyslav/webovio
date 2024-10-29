@@ -1,0 +1,32 @@
+<section class="start">
+  <div class="container">
+    <h2 class="start__title">Let’s make something amazing together.</h2>
+    <button class="start__button" data-modal-open>let's get started</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" data-modal-close>close</button>
+        <form action="#" class="form">
+          <h3 class="form__title">Leave your contacts</h3>
+          <ul class="form__contacts">
+            <li class="form__contact">
+              <label for="name" class="form__label">Fill in your name</label>
+              <input type="text" class="form__input" id="name" />
+            </li>
+            <li class="form__contact">
+              <label for="email" class="form__label">Fill in your email</label>
+              <input type="mail" class="form__input" id="email" />
+            </li>
+          </ul>
+          <label for="comment" class="form__label">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            class="form__textarea"
+            placeholder="leave your comment"
+          ></textarea>
+          <button type="submit" class="modal__submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
