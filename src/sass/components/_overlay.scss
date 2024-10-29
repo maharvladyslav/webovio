@@ -1,0 +1,91 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #0000009d;
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  animation: hide 4s linear forwards;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 50%);
+    animation: show 0.5s ease;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, 50%);
+  animation: show 0.5s ease;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $colorTextAccent;
+  animation: bounce 0.6s infinite alternate;
+
+  &:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes hide {
+  0% {
+    display: block;
+    backdrop-filter: blur(2px);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    backdrop-filter: blur(0px);
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
