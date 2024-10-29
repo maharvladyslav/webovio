@@ -1,0 +1,21 @@
+.footer {
+  background-color: black;
+  padding-top: 310px;
+  padding-bottom: 30px;
+}
+.footer__container {
+  display: flex;
+}
+.footer__contact__gray {
+  margin-bottom: 8px;
+  color: $colorFooterAdvertisings;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 250%;
+}
+.footer__contact__white {
+  color: $colorTextInverted;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 250%;
+}
