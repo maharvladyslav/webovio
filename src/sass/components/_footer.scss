@@ -25,3 +25,10 @@
   width: 100%;
   background-color: #5d6544;
 }
+.info__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
