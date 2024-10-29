@@ -1,8 +1,14 @@
+.start {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $colorBgLight;
+}
 .start__title {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.23333;
   color: $colorTextTitle;
+  margin-bottom: 30px;
 }
 .start__button {
   font-weight: 700;
@@ -10,9 +16,22 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
-.modal {
-  display: none;
-  // в наступній дз зроблю з js
+@media (min-width: 768) {
+  .start {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .start__title {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .start__button {
+    font-weight: 700;
+    color: $colorTextLink;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 }
 .form__title {
   font-size: 20px;
@@ -27,6 +46,6 @@
   font-size: 14px;
   @include color-opacity($colorTextTitle, 0.9);
 }
-.modal__submit {
+.form__submit {
   font-size: 20px;
 }
