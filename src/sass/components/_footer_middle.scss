@@ -38,12 +38,15 @@
   line-height: 158%;
   color: $colorTextInverted;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .info__container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
   align-items: center;
@@ -51,6 +54,7 @@
 }
 .info__card {
   position: relative;
+  flex-basis: 100%;
 }
 .info__card::after {
   content: '';
@@ -95,4 +99,91 @@
 }
 .info__icon__link:hover {
   background-color: $colorTextAccent;
+}
+@media (min-width: 720px) {
+  .info__container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 70px;
+  }
+  .info__card {
+    flex-basis: calc((100% - 70px) / 2);
+    max-width: 167px;
+  }
+  .info__card::after {
+    content: '';
+    display: none;
+  }
+  .info__item {
+    text-align: center;
+  }
+  .info__titel {
+    text-align: center;
+  }
+  .info__list {
+    min-width: 160px;
+  }
+  .info__card {
+    position: relative;
+  }
+  .info__card::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    left: -35px;
+    height: 220px;
+    bottom: -25px;
+    background-color: #5d6544;
+  }
+  .info__card:first-of-type {
+    position: static;
+  }
+}
+@media (min-width: 1200px) {
+  .info__card::before {
+    display: none;
+  }
+  .info__email {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 158%;
+  }
+  .info__item {
+    text-align: start;
+  }
+  .info__titel {
+    text-align: start;
+    text-emphasis: none;
+    margin-bottom: 23px;
+  }
+  .info__container {
+    gap: 100px;
+  }
+  .info_cart---two {
+    width: 322px;
+  }
+  .info__text {
+    text-align: start;
+    margin-bottom: 23px;
+  }
+  .info__iconts {
+    margin-top: 23px;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+  }
+  .info__cart---two {
+    position: relative;
+  }
+  .info__cart---two::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    left: -100px;
+    height: 210px;
+    bottom: -20px;
+    background-color: #5d6544;
+  }
 }
