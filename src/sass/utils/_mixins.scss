@@ -1,0 +1,10 @@
+@mixin color-opacity($color, $opacity) {
+  color: rgba($color, $opacity);
+}
+
+//  щоб викотистати міксину пишемо
+// @include color-opacity($колір-із-зміної, $прозорість);
+
+@mixin overlay-bg($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}

@@ -1,7 +1,7 @@
 .overlay {
+  @include overlay-bg($colorTextAccentPrimary, 0.6);
   position: fixed;
   inset: 0;
-  background-color: #0000009d;
   backdrop-filter: blur(2px);
   pointer-events: none;
   display: flex;

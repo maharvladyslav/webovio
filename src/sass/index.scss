@@ -1,8 +1,13 @@
+@import './utils/mixins';
+@import './utils/variables';
 @import './base/common';
 @import './base/reset';
-@import './utils/variables';
 @import './base/typography';
 @import './layout/grids';
 
 @import './components/header';
 @import './components/overlay';
+@import './components/hero';
+@import './components/work';
+@import './components/get-started';
+@import './components/footer';
