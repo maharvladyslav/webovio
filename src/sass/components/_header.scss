@@ -123,6 +123,12 @@
   }
 }
 
+@media (min-width: 400px) {
+  .logo__img {
+    content: url(../images/logo.svg);
+  }
+}
+
 @media (min-width: 768px) {
   .burger-container {
     animation: none;
