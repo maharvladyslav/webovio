@@ -1,3 +1,18 @@
+.work {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+.work__container {
+  display: flex;
+}
+.work__author {
+  display: flex;
+}
+.autor__image {
+  width: 90px;
+}
 .work__title {
   font-family: var(--font-family);
   color: $colorTextTitle;
