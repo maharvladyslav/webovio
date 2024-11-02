@@ -9,20 +9,29 @@
       url(../images/backgrounds/hero-bg@2x.jpg) type('image/jpeg')
     );
   }
-  margin-bottom: 211px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero__container {
+  flex-grow: 1;
 }
 .hero__text {
   font-size: 14px;
   color: $colorTextInverted;
+  margin-bottom: 22px;
 }
 .hero__title {
   font-weight: 700;
   font-size: 60px;
-
+  max-width: 616px;
+  line-height: 1.23;
   color: $colorTextInverted;
+  margin-bottom: 24px;
 }
 .hero__description {
   color: $colorTextInverted;
+  margin-bottom: 45px;
 }
 .hero__button {
   text-decoration: underline;
