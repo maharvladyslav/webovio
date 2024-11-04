@@ -1,26 +1,48 @@
-<<<<<<< HEAD
 .footer {
   background-color: $colorBgFooter;
-  padding-top: 310px;
-  padding-bottom: 30px;
+  padding-top: 280px;
+  padding-bottom: 52px;
 }
-.footer__container {
+
+.footer__firstpart {
+  padding-bottom: 60px;
+}
+
+.contact__list {
   display: flex;
+  gap: 80px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__contact__gray {
-  margin-bottom: 8px;
   color: $colorFooterAdvertisings;
   font-weight: 400;
   font-size: 16px;
-  line-height: 250%;
+  line-height: 1.2;
+  margin-bottom: 4px;
 }
+
 .footer__contact__white {
   color: $colorTextInverted;
   font-weight: 700;
   font-size: 16px;
   line-height: 250%;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
-=======
+
+.footer__contact__white:hover {
+  transform: scale(1.2);
+  text-shadow: 0px 5px 10px rgba(172, 189, 42, 1);
+}
+
 .info__titel {
   font-weight: 600;
   line-height: 237%;
@@ -55,4 +77,3 @@
   flex-direction: column;
   gap: 70px;
 }
->>>>>>> main
