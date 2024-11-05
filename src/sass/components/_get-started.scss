@@ -1,51 +1,48 @@
 .start {
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 40px;
   background-color: $colorBgLight;
 }
 .start__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.23333;
   color: $colorTextTitle;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .start__button {
   font-weight: 700;
   color: $colorTextLink;
   text-transform: uppercase;
   text-decoration: underline;
+  font-size: 12px;
 }
-@media (min-width: 768) {
+@media (min-width: 768px) {
   .start {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 90px;
   }
   .start__title {
-    font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 40px;
   }
   .start__button {
-    font-weight: 700;
-    color: $colorTextLink;
-    text-transform: uppercase;
-    text-decoration: underline;
+    font-size: 16px;
   }
 }
-.form__title {
-  font-size: 20px;
-  font-weight: 500;
-  color: $colorTextTitle;
-}
-.form__label {
-  font-size: 14px;
-  color: $colorTextRank;
-}
-.form__textarea {
-  font-size: 14px;
-  @include color-opacity($colorTextTitle, 0.9);
-}
-.form__submit {
-  font-size: 20px;
+@media (min-width: 1200px) {
+  .start {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 160px;
+    width: 88%;
+    position: relative;
+    top: 190px;
+  }
+  .start__title {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
 }

@@ -6,31 +6,46 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, 200%) scale(0);
+  transform: translate(-50%, 200%);
 }
 .modal {
-  background-color: ;
+  padding: 15px;
+  background-color: $colorTextInverted;
   z-index: 100;
   position: absolute;
   left: 50%;
   top: 50%;
-  min-width: 530px;
-  min-height: 580px;
-  transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  min-height: 560px;
+
   transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 .no-scroll {
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    min-width: 550px;
+    padding: 25px;
+  }
 }
