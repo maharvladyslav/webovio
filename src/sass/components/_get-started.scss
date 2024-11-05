@@ -1,0 +1,32 @@
+.start__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.23333;
+  color: $colorTextTitle;
+}
+.start__button {
+  font-weight: 700;
+  color: $colorTextLink;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.modal {
+  display: none;
+  // в наступній дз зроблю з js
+}
+.form__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: $colorTextTitle;
+}
+.form__label {
+  font-size: 14px;
+  color: $colorTextRank;
+}
+.form__textarea {
+  font-size: 14px;
+  @include color-opacity($colorTextTitle, 0.9);
+}
+.modal__submit {
+  font-size: 20px;
+}

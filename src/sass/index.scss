@@ -1,10 +1,12 @@
+@import './utils/mixins';
+@import './utils/variables';
 @import './base/common';
 @import './base/reset';
-@import './utils/variables';
+@import './base/base';
 @import './base/typography';
-
-@import './utils/variables';
-@import './components/footer';
-
 @import './layout/grids';
+
 @import './components/header';
+@import './components/hero';
+@import './components/work';
+@import './components/get-started';
