@@ -1,5 +1,7 @@
 .project {
   padding-top: 162px;
+  border-top: 1px;
+  border-color: rgba(33, 56, 66, 0.10);
   animation-name: section-invisible;
   animation-duration: 550ms;
   animation-iteration-count: 1;
@@ -27,6 +29,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-right: 133px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: 750px) {
+    margin-bottom: 50px;
+  }
 }
 
 .project-subtitle {
