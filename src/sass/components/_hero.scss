@@ -30,7 +30,7 @@
 .hero__title {
   font-weight: 700;
   font-size: 45px;
-  max-width: 616px;
+
   line-height: 1.23;
   color: $colorTextInverted;
   margin-bottom: 24px;
@@ -45,9 +45,12 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: $colorTextAccent;
-  text-align: center;
+  // display: inline-block;
+  margin: 0 auto;
+  display: block;
+  max-width: 115px;
 }
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .hero__text {
     font-size: 16px;
     text-align: left;
@@ -60,12 +63,18 @@
   .hero__description {
     text-align: left;
   }
+  .hero__button {
+    display: inline;
+  }
 }
 @media (min-width: 1200px) {
   .hero__text {
     font-size: 14px;
+    text-align: left;
   }
   .hero__title {
     font-size: 60px;
+    max-width: 616px;
+    text-align: left;
   }
 }
