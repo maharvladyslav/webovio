@@ -1,3 +1,8 @@
+// HERO__CONTAINER
+.hero__container {
+  flex-grow: 1;
+}
+// HERO
 .hero {
   background-image: image-set(
     url(../images/backgrounds/hero-bg.webp) type('image/webp'),
@@ -15,9 +20,7 @@
   display: flex;
   align-items: center;
 }
-.hero__container {
-  flex-grow: 1;
-}
+// HERO__STYLE__TEXT
 .hero__text {
   font-size: 16px;
   color: $colorTextInverted;
