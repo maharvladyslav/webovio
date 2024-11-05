@@ -1,46 +1,65 @@
 .footer {
-  background-color: $colorBgFooter;
+  // background-color: $colorBgFooter;
+  background-image: url(../images/FooterBgImage.jpg);
   padding-top: 280px;
   padding-bottom: 52px;
-}
-
-.footer__firstpart {
-  padding-bottom: 60px;
-}
-
-.contact__list {
-  display: flex;
-  gap: 80px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact__item {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__contact__gray {
-  color: $colorFooterAdvertisings;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
-  margin-bottom: 4px;
-}
-
-.footer__contact__white {
-  color: $colorTextInverted;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 250%;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.footer__contact__white:hover {
-  transform: scale(1.2);
-  text-shadow: 0px 5px 10px rgba(172, 189, 42, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .footer__firstpart {
+    padding-bottom: 60px;
+  }
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .contact__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contact__gray {
+    color: $colorFooterAdvertisings;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .footer__contact__white {
+    color: $colorTextInverted;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 250%;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  .footer__contact__white:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 5px 10px rgba(172, 189, 42, 1);
+  }
+  @media (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    .contact__list {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 40px;
+    }
+    .contact__item {
+      align-items: flex-start;
+      margin-top: 0;
+    }
+  }
+  @media (min-width: 1025px) {
+    padding-top: 280px;
+    padding-bottom: 52px;
+    .contact__list {
+      gap: 80px;
+    }
+  }
 }
 
 .info__titel {
