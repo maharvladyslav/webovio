@@ -7,11 +7,9 @@
 .work__container {
   display: flex;
 }
-.work__author {
-  display: flex;
-}
-.autor__image {
-  width: 90px;
+.work__body {
+  width: 475px;
+  margin-right: 160px;
 }
 .work__title {
   font-family: var(--font-family);
@@ -23,24 +21,51 @@
   font-family: var(--font-family);
   font-size: 36px;
   color: $colorTextTitle;
+  margin-top: 29px;
 }
 .work__text {
   font-family: var(--font-family);
   color: $colorTextPrimary;
+  margin-bottom: 42px;
 }
 .work__link {
   color: $colorTextLink;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
-
+// --------------------------------quote
+.work__author {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.work__quote {
+  max-width: 474px;
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 8px;
+}
+.author__text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 22px;
+  color: $colorTextTitle;
+}
+.autor__image {
+  width: 90px;
+}
+.author__meta {
+  margin-left: 50px;
+}
 .quote__text {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 22px;
   color: $colorTextTitle;
 }
-.quote__title {
+.author__role {
   font-family: var(--font-family);
   color: $colorTextRank;
 }
