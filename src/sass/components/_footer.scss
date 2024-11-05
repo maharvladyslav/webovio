@@ -1,10 +1,19 @@
 .footer {
-  // background-color: $colorBgFooter;
-  background-image: url(../images/FooterBgImage.jpg);
+  background-image: image-set(
+    url(../images/FooterBgImages/footer-bg-image.webp) type('image/webp'),
+    url(../images/FooterBgImages/footer-bg-image.jpg) type('image/jpeg')
+  );
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(
+      url(../images/FooterBgImages/footer-bg-image@2x.webp) type('image/webp'),
+      url(../images/FooterBgImages/footer-bg-image@2x.jpg) type('image/jpeg')
+    );
+  }
   padding-top: 280px;
   padding-bottom: 52px;
   background-size: cover;
   background-repeat: no-repeat;
+
   .footer__firstpart {
     padding-bottom: 60px;
   }
