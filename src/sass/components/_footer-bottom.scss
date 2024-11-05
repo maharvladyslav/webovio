@@ -1,0 +1,20 @@
+.footer__bottom {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.copyright {
+  color: $colorFooterAdvertisings;
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
