@@ -1,12 +1,12 @@
 .footer {
   background-image: image-set(
-    url(../images/FooterBgImages/footer-bg-image.webp) type('image/webp'),
-    url(../images/FooterBgImages/footer-bg-image.jpg) type('image/jpeg')
+    url(../images/footerbackground/footer-bg-image.webp) type('image/webp'),
+    url(../images/footerbackground/footer-bg-image.jpg) type('image/jpeg')
   );
   @media (min-resolution: 2dppx) {
     background-image: image-set(
-      url(../images/FooterBgImages/footer-bg-image@2x.webp) type('image/webp'),
-      url(../images/FooterBgImages/footer-bg-image@2x.jpg) type('image/jpeg')
+      url(../images/footerbackground/footer-bg-image@2x.webp) type('image/webp'),
+      url(../images/footerbackground/footer-bg-image@2x.jpg) type('image/jpeg')
     );
   }
   padding-top: 280px;
