@@ -43,11 +43,18 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: $colorTextAccent;
-
   margin: 0 auto;
   display: block;
   max-width: 115px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
+.hero__button:hover {
+  color: #ff8000;
+  box-shadow: 4px 4px 6px 6px rgba(255, 128, 0, 0.74);
+}
+
 @media (min-width: 768px) {
   .hero__text {
     font-size: 18px;
