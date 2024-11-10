@@ -3,6 +3,7 @@
   padding-bottom: 50px;
   padding-left: 40px;
   background-color: $colorBgLight;
+  z-index: 2;
 }
 .start__title {
   font-weight: 700;
@@ -17,6 +18,10 @@
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 12px;
+  transition: color 0.5s;
+  &:hover {
+    color: $colorTextTitle;
+  }
 }
 @media (min-width: 768px) {
   .start {

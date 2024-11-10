@@ -23,7 +23,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   min-width: 320px;
-  min-height: 560px;
+  min-height: 480px;
+  border-radius: 5px;
 
   transition-property: transform;
   transition-duration: 0.5s;
@@ -33,6 +34,11 @@
   position: absolute;
   top: 5px;
   right: 5px;
+  transition: color, font-weight 0.5s;
+  &:hover {
+    color: $colorTextAccent;
+    font-weight: 600;
+  }
 }
 .no-scroll {
   overflow: hidden;
@@ -40,12 +46,14 @@
 @media (min-width: 768px) {
   .modal {
     min-width: 450px;
+    min-height: 550px;
     padding: 20px;
   }
 }
 @media (min-width: 1200px) {
   .modal {
     min-width: 550px;
+    min-height: 580px;
     padding: 25px;
   }
 }

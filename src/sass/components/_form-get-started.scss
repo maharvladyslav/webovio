@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .form__title {
   font-size: 20px;
@@ -30,6 +31,11 @@
   border: 1px dashed $colorTextPrimary;
   border-radius: 5px;
   padding: 5px;
+  transition: color, border 0.5s;
+  &:hover {
+    color: $colorTextAccent;
+    border-color: $colorTextAccent;
+  }
 }
 .form__textarea {
   font-size: 14px;
@@ -40,12 +46,26 @@
   padding: 15px 15px;
   resize: none;
   margin-bottom: 20px;
+  transition: color, border 0.5s;
+  &:hover {
+    color: $colorTextAccent;
+    border-color: $colorTextAccent;
+  }
 }
 .form__submit {
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 500;
   border: 1px solid $colorBgIcons;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 20px;
+  align-self: center;
+  border-color: $colorTextAccent;
+  transition: color, background-color, border 0.5s;
+  &:hover {
+    color: $colorTextInverted;
+    background-color: $colorTextAccent;
+    border: none;
+  }
 }
 @media (min-width: 768px) {
   .form__title {
@@ -59,10 +79,18 @@
     font-size: 16px;
     height: 130px;
   }
+  .form__submit {
+    font-size: 18px;
+    padding: 5px 30px;
+  }
 }
 @media (min-width: 1200px) {
   .form__title {
     font-size: 30px;
     margin-bottom: 30px;
+  }
+  .form__submit {
+    font-size: 20px;
+    padding: 5px 30px;
   }
 }
