@@ -2,14 +2,14 @@
 
 let lastScrollTop = 0;
 
-const header = document.querySelector('.header');
+const logo = document.querySelector('.header__logo');
 
 window.addEventListener('scroll', function () {
-  const scrollTop = this.window.pageYOffset;
+  const scrollTop = this.window.scrollY;
 
   if (scrollTop > lastScrollTop) {
-    header.style.top = '-80px';
+    logo.style.top = '-80px';
   } else {
-    header.style.top = '25px';
+    logo.style.top = '0';
   }
 });
