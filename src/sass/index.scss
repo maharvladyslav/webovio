@@ -6,10 +6,16 @@
 @import './base/typography';
 @import './layout/grids';
 
-@import './components/header';
 @import './components/overlay';
+
+@import './components/header';
 @import './components/hero';
 @import './components/work';
+@import './components/projects';
 @import './components/get-started';
+@import './components/modal-get-started';
+@import './components/form-get-started';
+@import './components/footer';
+@import './components/footer-main';
 
 @import './utils/keyframes';

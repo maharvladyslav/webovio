@@ -8,3 +8,7 @@
 @mixin overlay-bg($color, $opacity) {
   background-color: rgba($color, $opacity);
 }
+
+@mixin animation($animName, $time, $function) {
+  animation: $animName $time $function;
+}

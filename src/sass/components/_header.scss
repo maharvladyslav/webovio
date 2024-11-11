@@ -3,12 +3,23 @@
   top: 25px;
   right: 0;
   left: 0;
+  z-index: 10;
+  @include animation(fadeUp, 2.5s, ease);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  transition: top 0.5s ease 0.2s;
 }
 
 .nav {
@@ -26,7 +37,7 @@
   position: fixed;
   background-color: $colorBgNav;
   animation: hideMobile 0.5s ease;
-  z-index: 5;
+  z-index: 10;
 
   &.active {
     animation: showMobile 0.5s ease;
@@ -54,14 +65,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   padding: 14px 11px;
   border: 1px solid transparent;
   border-radius: 100%;
   background-color: $colorBgNav;
   position: relative;
+  cursor: pointer;
   z-index: 10;
+  transform: scale(1);
   animation: hideBorder 0.5s ease;
 
   &.active {
@@ -131,6 +144,8 @@
 
 @media (min-width: 768px) {
   .burger-container {
+    width: 40px;
+    height: 40px;
     animation: none;
     border: none;
 
