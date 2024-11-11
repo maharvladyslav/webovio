@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.header__logo {
+  position: relative;
+  transition: top 0.5s ease 0.2s;
+}
+
 .nav {
   position: relative;
 }
@@ -54,13 +59,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   padding: 14px 11px;
   border: 1px solid transparent;
   border-radius: 100%;
   background-color: $colorBgNav;
   position: relative;
+  cursor: pointer;
   z-index: 10;
   animation: hideBorder 0.5s ease;
 
@@ -131,6 +137,8 @@
 
 @media (min-width: 768px) {
   .burger-container {
+    width: 40px;
+    height: 40px;
     animation: none;
     border: none;
 
