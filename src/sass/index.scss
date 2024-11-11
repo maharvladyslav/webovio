@@ -2,12 +2,16 @@
 @import './utils/variables';
 @import './base/common';
 @import './base/reset';
+@import './base/base';
 @import './base/typography';
 @import './layout/grids';
 
 @import './components/header';
+@import './components/overlay';
 @import './components/hero';
-@import './components/project';
+@import './components/projects';
+@import './components/work';
 @import './components/get-started';
+@import './components/footer-main';
 @import './components/footer';
 
