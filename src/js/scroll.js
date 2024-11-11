@@ -9,9 +9,7 @@ window.addEventListener('scroll', function () {
 
   if (scrollTop > lastScrollTop) {
     logo.style.top = '-80px';
-    // document.querySelector('.header').classList.toggle('hide');
   } else {
     logo.style.top = '0';
-    // document.querySelector('.header').classList.toggle('active');
   }
 });
