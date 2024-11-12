@@ -5,7 +5,6 @@ let lastScrollTop = 0;
 const logo = document.querySelector('.header');
 const container = document.querySelector('.header__container');
 const menu = document.querySelector('.nav-container');
-const rect = menu.getBoundingClientRect();
 
 window.addEventListener('scroll', function () {
   const scrollTop = this.window.scrollY;
