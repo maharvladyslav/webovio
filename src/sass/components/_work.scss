@@ -1,31 +1,109 @@
+.work {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.work__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .work__title {
   font-family: var(--font-family);
   color: $colorTextTitle;
   font-size: 14px;
 }
 .work__subtitle {
-  font-weight: 700;
+  font-weight: 600;
   font-family: var(--font-family);
-  font-size: 36px;
+  font-size: 26px;
   color: $colorTextTitle;
+}
+.color__subtitle {
+  background: rgba(255, 215, 35, 0.1);
 }
 .work__text {
   font-family: var(--font-family);
   color: $colorTextPrimary;
+  margin-bottom: 32px;
+  margin-top: 35px;
 }
 .work__link {
   color: $colorTextLink;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+// --------------------------------quote
+.work__author {
+  display: flex;
+  align-items: center;
+}
+.work__quote {
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
 
-.quote__text {
+  padding-bottom: 60px;
+  box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.15);
+}
+.author__text {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 22px;
   color: $colorTextTitle;
 }
-.quote__title {
+.autor__image {
+  width: 90px;
+}
+.author__meta {
+  margin-left: 50px;
+}
+.quote__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  color: $colorTextTitle;
+}
+.author__role {
   font-family: var(--font-family);
   color: $colorTextRank;
+  font-weight: 600;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .work {
+    padding-top: 120px;
+  }
+  .work__container {
+    flex-direction: row;
+  }
+  .quote__text {
+    font-size: 22px;
+    font-weight: 500px;
+  }
+  .author__role {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .work {
+    padding-top: 0;
+  }
+  .work__body {
+    padding-top: 244px;
+  }
+
+  .work__text {
+    max-width: 475px;
+  }
+  .work__quote {
+    max-width: 474px;
+  }
+  .quote__text {
+    padding-top: 244px;
+    padding-bottom: 64px;
+  }
 }
