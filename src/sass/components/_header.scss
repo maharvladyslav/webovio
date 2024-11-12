@@ -8,6 +8,10 @@
 
 .no-scroll {
   overflow: hidden;
+
+  .header {
+    z-index: 2;
+  }
 }
 
 .header__container {
@@ -51,8 +55,17 @@
 .menu__link {
   color: $colorTextAccentPrimary;
   transition: color 0.3s ease;
-  &:hover {
-    color: $colorTextAccent;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $colorTextAccent;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      color: $colorTextAccent;
+    }
   }
 }
 
@@ -81,8 +94,10 @@
     transition: transform 0.5s ease;
   }
 
-  &.active:hover {
-    transform: scale(0.9) rotate(1turn);
+  @media (hover: none) {
+    &.active:active {
+      transform: scale(0.9);
+    }
   }
 }
 
