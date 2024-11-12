@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin-top: 100px;
 }
 .work__container {
   display: flex;
@@ -75,7 +75,7 @@
 }
 @media (min-width: 768px) {
   .work {
-    margin: 20px;
+    margin-top: 120px;
   }
   .work__container {
     flex-direction: row;
@@ -89,8 +89,11 @@
   }
 }
 @media (min-width: 1200px) {
+  .work {
+    margin-bottom: 150px;
+  }
   .work__body {
-    padding-top: 245px;
+    padding-top: 244px;
   }
 
   .work__text {
