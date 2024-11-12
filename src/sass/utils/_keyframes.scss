@@ -1,0 +1,59 @@
+@keyframes fadeUp {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
