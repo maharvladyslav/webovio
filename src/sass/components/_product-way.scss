@@ -30,6 +30,7 @@
     line-height: 186%;
     color: rgba(33, 56, 66, 0.6);
     // margin-bottom: 56px;
+    text-align: left;
 }
 .firts__text {
     margin-bottom: 56px;
@@ -51,17 +52,18 @@
     color: $colorTextLink;
 }
 .products__icon {
-    color: black;
-    
+    fill: $colorTextLink;
+    border-radius: 2px;
 }
+
 .first__link {
     margin-top: 56px;
 }
-.products__link:hover {
+.products__link:hover , .products__icon:hover {
     color: $colorTextAccent;
+    fill: $colorTextAccent;
     transition: 250ms;
 }
-
 
 .products__card {
     width: 255px;
