@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  margin: 10px;
 }
 .work__container {
   display: flex;
@@ -63,7 +64,7 @@
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  padding-bottom: 20px;
+
   color: $colorTextTitle;
 }
 .author__role {
@@ -73,6 +74,9 @@
   font-size: 13px;
 }
 @media (min-width: 768px) {
+  .work {
+    margin: 20px;
+  }
   .work__container {
     flex-direction: row;
   }
