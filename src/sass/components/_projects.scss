@@ -6,6 +6,12 @@
   animation-duration: 700ms;
   animation-iteration-count: 1;
   opacity: 1;
+
+  &.visible {
+    .projects__heading {
+      @include animation(fadeDown, 1.3s, ease);
+    }
+  }
 }
 
 @keyframes section-invisible {
@@ -34,9 +40,8 @@
 }
 
 .projects__title,
-.projects__subtitle:hover{
-  opacity: 0,80;
-  
+.projects__subtitle:hover {
+  opacity: 0, 80;
 }
 
 .projects__heading {

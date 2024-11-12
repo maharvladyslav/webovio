@@ -3,6 +3,16 @@
   display: flex;
   justify-content: center;
   padding-top: 100px;
+
+  &.visible {
+    .work__body {
+      @include animation(fadeLeft, 1s, ease);
+    }
+
+    .work__quote {
+      @include animation(fadeRight, 1.3s, ease);
+    }
+  }
 }
 .work__container {
   display: flex;

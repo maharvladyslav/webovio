@@ -19,6 +19,7 @@
 
 .hero__container {
   flex-grow: 1;
+  @include animation(fadeLeft, 2.5s, ease);
 }
 .hero__text {
   color: $colorTextInverted;

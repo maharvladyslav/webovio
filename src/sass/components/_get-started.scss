@@ -4,6 +4,10 @@
   padding-left: 40px;
   background-color: $colorBgLight;
   z-index: 2;
+
+  &.visible {
+    @include animation(fadeLeft, 1.3s, ease);
+  }
 }
 .start__title {
   font-weight: 700;
